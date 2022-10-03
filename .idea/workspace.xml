@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7195c72b-8a27-4f11-95e7-eb44362e44d2" name="Changes" comment="workInProgress_new_project_mongoDB">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/qualitiesTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/qualitiesTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/editForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/editForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/editQuality.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/editQuality.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/qualititesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/qualititesList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,12 +45,32 @@
       <updated>1664686757227</updated>
       <workItem from="1664686767828" duration="1776000" />
       <workItem from="1664767515220" duration="1184000" />
-      <workItem from="1664768801764" duration="1279000" />
+      <workItem from="1664768801764" duration="1310000" />
+      <workItem from="1664805326945" duration="3034000" />
     </task>
+    <task id="LOCAL-00001" summary="workInProgress_new_project_mongoDB">
+      <created>1664770114079</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664770114079</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workInProgress_new_project_mongoDB" />
