@@ -1,28 +1,21 @@
-import React, {useEffect, useState} from "react";
-import EditForm from "../components/ui/editForm";
+import React from "react";
 import {useParams} from "react-router-dom";
-import httpService from "../services/http.service";
+import QualityForm from "../components/ui/qualityForm";
+import {useQualities} from "../../hooks/useQualities";
+
 
 const EditQualityPage = () => {
-    const [quality, setQuality] = useState(null);
     const id = useParams().id;
-    const qualityEndPoint = `quality/${id}`;
-
-    const handleSubmit = async (data) => {
-        try {
-            await httpService.put(qualityEndPoint, data).then(res => console.log(res.data.content))
-        } catch (error) {
-            console.log('Expected error')
-        }
+    const {getQuality, updateQuality} = useQualities();
+    const quality = getQuality(id)
+    const handleSubmit = (data) => {
+        console.log(data);
+        updateQuality(data)
     };
-    useEffect(async() => {
-       const {data} = await httpService.get(qualityEndPoint)
-        setQuality(data.content);
-    }, [])
     return (
         <>
             <h1>Edit Quality Page</h1>
-            {quality!==null ? <EditForm data={quality} onSubmit={handleSubmit}/>: 'Loading...' }
+           <QualityForm data={quality} onSubmit={handleSubmit}/>
         </>
     );
 };

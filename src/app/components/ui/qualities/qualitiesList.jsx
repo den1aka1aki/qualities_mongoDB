@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Quality from "./quality";
-
 import Loading from "app/components/common/comments/loading";
 import { useQualitiesContext } from "app/context/qualitiesContext";
 
