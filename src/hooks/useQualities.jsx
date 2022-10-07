@@ -10,6 +10,10 @@ export const QualitiesProvider = ({children}) => {
     const [qualities, setQualities] = useState([]);
     const [error, setError] = useState(null);
     const [isLoading, setLoading] = useState(true);
+    function errorCatcher (error){
+        const {message} = error.response.data;
+        setError(message);
+    }
     useEffect(() =>{
         const getQualities = async () => {
             try {
@@ -17,8 +21,7 @@ export const QualitiesProvider = ({children}) => {
                 setQualities(content);
                 setLoading(false);
             }catch (error) {
-                const {message} = error.response.data;
-                setError(message)
+                errorCatcher(error);
             }
         };
         getQualities();
@@ -28,32 +31,36 @@ export const QualitiesProvider = ({children}) => {
     const addQuality = async (data)=>{
         try {
            const {content} = await qualityService.create(data);
-           setQualities(prevState => [...prevState,content])
+           setQualities(prevState => [...prevState,content]);
             return content;
         }
         catch (error){
-            const {message} = error.response.data;
-            setError(message)
+           errorCatcher(error);
         }
     }
+    useEffect(() => {
+        if(error!==null){
+            toast(error);
+            setError(null);
+        }
+    },[error])
 
     const getQuality = (id) => {
-        return qualities.find((q)=>q._id===id)
+        return qualities.find((q)=>q._id===id);
     }
     const deleteQuality = async (id) => {
     try {
-        const {content} = await qualityService.delete(id)
+        const {content} = await qualityService.delete(id);
         setQualities(prevState => {
-            return prevState.filter(item=>item._id!==content._id)
+            return prevState.filter(item=>item._id!==content._id);
         })
-    } catch (e) {
-        const {message} = error.response.data;
-        setError(message)
+    } catch (error) {
+       errorCatcher(error);
     }
     }
     const updateQuality = async ({_id: id, ...data}) => {
         try {
-            const {content} = await qualityService.update(id, data)
+            const {content} = await qualityService.update(id, data);
             setQualities((prevState) => prevState.map((item)=>{
                 if(item._id===content._id){
                     return content;
@@ -63,8 +70,7 @@ export const QualitiesProvider = ({children}) => {
             );
             return content;
         } catch (error) {
-            const {message} = error.response.data
-            setError(message)
+           errorCatcher(error);
         }
     };
 

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7195c72b-8a27-4f11-95e7-eb44362e44d2" name="Changes" comment="workInProgress_new_project_mongoDB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/qualititesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/qualititesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/quality.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/quality.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useQualities.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useQualities.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +49,8 @@
       <workItem from="1664829394745" duration="4285000" />
       <workItem from="1664854876021" duration="4269000" />
       <workItem from="1664941820580" duration="4845000" />
-      <workItem from="1665027469761" duration="4949000" />
+      <workItem from="1665027469761" duration="5420000" />
+      <workItem from="1665114785423" duration="1354000" />
     </task>
     <task id="LOCAL-00001" summary="workInProgress_new_project_mongoDB">
       <created>1664770114079</created>
@@ -81,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665031471503</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="workInProgress_new_project_mongoDB">
+      <created>1665032727665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665032727665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
